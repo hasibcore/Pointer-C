@@ -1,0 +1,12 @@
+//Write a C program to find the sum of two numbers using pointers.
+#include<stdio.h>
+int main()
+{
+    int a,b;
+
+   int *p=&a;
+   int *q=&b;
+    scanf("%d %d",p,q);
+
+    printf("%d",*p+*q);
+}
