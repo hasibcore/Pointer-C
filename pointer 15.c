@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+void rev(char *p,int len)
+{
+    int i=0;
+    while(i<len/2)
+    {
+        char temp=*(p+i);
+        *(p+i)=*(p+len-1-i);
+        *(p+len-1-i)=temp;
+        i++;
+    }
+    }
+    int main()
+    {
+        char str1[]={"Hasibul Hasan"};
+        char *q=str1;
+       int x=strlen(q);
+       rev(q,x);
+       puts(q);
+       printf("\nAnother\n");
+      int n=30;
+       char str2[n];
+       strlen(str2);
+       gets(str2);
+       rev(str2,n);
+
+    }
+
